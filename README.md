@@ -1,0 +1,25 @@
+class dakr:
+    def __init__(self):
+        self.balance=0
+        print("welcome to DAKR")
+    def deposit(self):
+          amount=float(input("enter amount to be deposited:"))
+          self.balance+=amount
+          print("\n Deposited amount :",amount)
+    def withdraw(self):
+          amount=float(input("Enter amount to be withdraw:"))
+          if self.balance>=amount:
+                self.balance-=amount
+                print("\n withdraw :",amount)       
+          else:
+                print("\n Insufficient balance")
+    def checkbal(self):
+         print("\n Net Available balance:",self.balance)
+
+#driver code
+s=dakr()
+s.deposit()
+s.withdraw()
+s.checkbal()
+              
+        
